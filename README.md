@@ -1,24 +1,47 @@
-# README
+# Penguin Rails API Backend (CVWO Assignment 2025)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Backend (deployed on Render) for CVWO Assignment. 
+This mainly contains the APIs and the Database Structure. 
 
-Things you may want to cover:
+## Prerequisites
 
-* Ruby version
+- **Ruby** 3.2.2
+- **PostgreSQL** 14+ [Guide]([www.google.com](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-20-04)
+- **Bundler** (`gem install bundler`)
 
-* System dependencies
+## Setup
 
-* Configuration
+1. **Clone repository**
+   
+   ```
+   git clone https://github.com/Arnav-Jhajharia/web_forum_backend.git
+   cd web_forum_backend
+   ```
+   
 
-* Database creation
+3. **Install Dependencies**
+   
+   ```
+   bundle install
+   ```
+   
+4. **Create Database**
 
-* Database initialization
+    ```
+    rails db:create
+    ```
+   
+4. **Run the Development Environment**
+  
+    ```
+    bin/dev
+    ```
 
-* How to run the test suite
+## Important Folders / Files
 
-* Services (job queues, cache servers, search engines, etc.)
+1. ```app/models```: Contains all the models
+2. ```app/controllers/api/v1```: Contains all the controllers
+3. ```db/seeds.rb```: Optional seed to run to test the app (using ```rails db:seed```)
+4. ```db/schema.rb```: Database Schema
 
-* Deployment instructions
 
-* ...
