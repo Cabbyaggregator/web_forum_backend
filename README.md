@@ -6,7 +6,7 @@ This mainly contains the APIs and the Database Structure.
 ## Prerequisites
 
 - **Ruby** 3.2.2
-- **PostgreSQL** 14+ [Guide]([www.google.com](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-20-04)
+- **PostgreSQL** 14+ [Guide](https://www.digitalocean.com/community/tutorials/how-to-use-postgresql-with-your-ruby-on-rails-application-on-ubuntu-20-04)
 - **Bundler** (`gem install bundler`)
 
 ## Setup
