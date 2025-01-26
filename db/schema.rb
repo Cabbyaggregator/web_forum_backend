@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_01_26_032900) do
+ActiveRecord::Schema[7.2].define(version: 2025_01_26_032901) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -48,7 +48,6 @@ ActiveRecord::Schema[7.2].define(version: 2025_01_26_032900) do
   create_table "forum_threads", force: :cascade do |t|
     t.string "title", null: false
     t.text "content", null: false
-    t.integer "mood", default: 0
     t.bigint "user_id", null: false
     t.bigint "category_id", null: false
     t.text "tag_list"
@@ -56,6 +55,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_01_26_032900) do
     t.datetime "updated_at", null: false
     t.integer "likes_count", default: 0, null: false
     t.integer "chill_votes_count", default: 0, null: false
+    t.string "mood", default: "Chill", null: false
     t.index ["category_id"], name: "index_forum_threads_on_category_id"
     t.index ["user_id"], name: "index_forum_threads_on_user_id"
   end

@@ -5,13 +5,13 @@ class ForumThread < ApplicationRecord
   has_and_belongs_to_many :tags
   has_many :reactions, dependent: :destroy
 
-  enum :mood, {
-    chill: 0,
-    excited: 1,
-    curious: 2,
-    supportive: 3,
-    casual: 4
-  }, prefix: true
+  enum mood: {
+    chill:      "Chill",
+    excited:    "Excited",
+    curious:    "Curious",
+    supportive: "Supportive"
+  }
+
 
   validates :title, presence: true, length: { maximum: 150 }
   validates :content, presence: true
