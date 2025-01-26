@@ -3,6 +3,12 @@
 Backend (deployed on Render) for CVWO Assignment. 
 This mainly contains the APIs and the Database Structure. 
 
+Deployment: https://cvwo-arnav-jhajharia.onrender.com
+
+## Note
+
+As the backend is deployed on the free version of Render, it might be inactive if not used for long and take up to 50 seconds to restart.
+
 ## Prerequisites
 
 - **Ruby** 3.2.2
